@@ -1,0 +1,81 @@
+@import "fonts.css";
+@import "colors.css";
+
+body {
+    background-color: #212529;
+    font-family: Vazir-fd;
+}
+
+* {
+    font-size: 21px;
+}
+
+.bi::before {
+    vertical-align: -0.25em;
+}
+.hidden {
+    display: none;
+}
+
+.main {
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px 10px;
+}
+.main-page {
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px 10px;
+}
+
+#rounds-indicator {
+    margin-bottom: 30px;
+    /* border-bottom: 0 !important; */
+    display: inline-block;
+    padding: 3px 15px;
+    border: 1px solid #4d5154;
+    border-radius: 10px;
+}
+
+#score-board table {
+    border: 1px solid #4d5154;
+}
+
+.big-btn {
+    border-radius: 50rem;
+    padding: 10px 45px;
+}
+
+.genre {
+    padding: 33px 0;
+    background-color: #f00;
+    border-radius: 20px;
+    cursor: pointer;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.proverb, .rush {
+    padding: 30px 0;
+    background-color: #f00;
+    border-radius: 20px;
+    cursor: pointer;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.score {
+    padding: 22px 0;
+    background-color: rgb(0, 181, 151);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.main>div {
+    width: 100% !important;
+}
+
+@media (min-width: 440px) {
+    .main,
+    .main-page {
+        border: 2px solid lightgray;
+    }
+}
