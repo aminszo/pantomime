@@ -15,22 +15,19 @@ Route::resource('words', WordController::class);
 // Route to get a random word based on genre and score
 Route::get('/word/random/{genre}/{score}', [GameController::class, 'getRandomWord']);
 
-// Route to get a random word based on genre and score
 Route::post('/save-data', [GameController::class, 'saveUsedWords']);
 
+// Route::get('/delete', function (Request $request) {
+//     $request->session()->flush();
+// });
 
-Route::get('/delete', function (Request $request) {
-    $request->session()->flush();
-});
+// Route::get('/read', function (Request $request) {
+//     dump($request->session()->all());
+//     dd($request->session()->get('data'));
+// });
 
-Route::get('/read', function (Request $request) {
-    dump($request->session()->all());
-    dd($request->session()->get('data'));
-});
-
-Route::get('/push', function (Request $request) {
-    $request->session()->push('data', 'developers');
-});
-
+// Route::get('/push', function (Request $request) {
+//     $request->session()->push('data', 'developers');
+// });
 
 Route::get('/words-bag', [GameController::class, 'getWordsBunchNew']);
