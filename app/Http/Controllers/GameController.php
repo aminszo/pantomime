@@ -53,14 +53,7 @@ class GameController extends Controller
 
     public function saveUsedWords(Request $request)
     {
-
-        // dd("hi");
         $data = $request->data;
-
-
         $request->session()->push('data', $data);
-
-        // $request->session()->push('data', $request->data);
-        // session(["do" => $data]);
     }
 }
